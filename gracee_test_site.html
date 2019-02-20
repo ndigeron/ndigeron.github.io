@@ -110,15 +110,17 @@
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {edge: "right"});
-    
     document.querySelector(".navbar-burger").addEventListener('click', function() {
         instances[0].open();
+        document.getElementsByTagName("body")[0].style.overflow = "visible";
     });
     document.querySelector(".lets-connect").addEventListener('click', function() {
         instances[0].open();
+        document.getElementsByTagName("body")[0].style.overflow = "visible";
     });
     document.querySelector(".close-icon").addEventListener('click', function() {
         instances[0].close();
+        document.getElementsByTagName("body")[0].style.overflow = "visible";
     });
     
   });
